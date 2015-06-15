@@ -1,6 +1,9 @@
-__author__ = 'guuh'
+import webapp2
 
-from flask import Flask
+class HelloWebapp2(webapp2.RequestHandler):
+    def get(self):
+        self.response.write('Hello, webapp2!')
 
-app = Flask(__name__)
-
+app = webapp2.WSGIApplication([
+    ('/', HelloWebapp2),
+], debug=True)
