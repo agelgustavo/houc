@@ -7,3 +7,7 @@ threadsafe: true
 handlers:
 - url: /s/.*
   script: src.controllers.router.app
+
+libraries:
+- name: webob
+  version: latest
