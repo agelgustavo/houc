@@ -6,4 +6,4 @@ threadsafe: true
 
 handlers:
 - url: /s/.*
-  script: main.app
+  script: src.controllers.router.app
